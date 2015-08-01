@@ -1,1 +1,53 @@
-hello github page
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>skyrelu站点导航</title>
+		<link rel="stylesheet" type="text/css" href="css/csshake.css">
+		<link rel="stylesheet" type="text/css" href="css/icon.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<h1>这里只有很<span class="color1">酷</span><span class="color2">酷</span><span class="color3">酷</span><span class="color4">酷</span><span class="color5">酷</span><span class="color6">酷</span><span class="color7">酷</span>的网站！</h1>
+		<div class="add-site-input">
+			<input type="text" placeholder="在这里贴网址" id="input-url" >
+			<input type="text" placeholder="在这里输入描述" id="input-name" >
+			<input type="button" value="添加" id="btn-add" >
+			<input type="button" value = "修改" id="btn-edit" >
+		</div>
+		<div id="content-site"></div>
+		<div class="dialog" id="dialog-edit">
+			<div class="dialog-content">
+				<span class="icon-cross"></span>
+				<h3>修改网址或描述</h3>
+				<div class="inputrow first-item">
+					<label for="edit-input-url">网址：</label>
+					<input type="text" id="edit-input-url">
+				</div>
+				<div class="inputrow">
+					<label for="edit-input-name">描述：</label>
+					<input type="text" id="edit-input-name">
+				</div>
+				<input type="button" value="确认修改" id="edit-confirm-btn">
+			</div>
+		</div>
+		<div class="dialog" id="dialog-delete">
+			<div class="dialog-content">
+				<span class="icon-cross"></span>
+				<h3>删除收藏站点</h3>
+				<p>确定要删除<span id="siteName"></span>吗？</p>
+				<input type="button" value="删除" id="delete-confirm-btn">
+				<input type="button" value="取消" id="delete-cancel-btn">
+			</div>
+		</div>
+		<div class="tips">
+			<div class="tips-content">
+				<p id="state"></p>
+				<input type="button" value="确定" id="tips-confirm-btn">
+			</div>
+		</div>
+		<div class="overlay"></div>
+		<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+		<script src="js/mynav.js"></script>
+	</body>
+</html>
